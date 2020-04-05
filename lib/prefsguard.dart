@@ -40,7 +40,7 @@ class PrefsGuard {
     }
   }
 
-  void clearPres() async {
+  void clearAll() async {
     final prefs = await SharedPreferences.getInstance();
     prefs.clear();
   }

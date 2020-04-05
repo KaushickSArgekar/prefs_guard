@@ -51,6 +51,12 @@ pres.write(key: 'hello', value: 'flutter'); //encrypts using FerNet encryption.
 final data= await pres.read(key: 'hello');//decrypt using FerNet 
 ```
 
+### Clearing Prefs
+```dart
+final prefs = PrefsGuard(GuardType.FerNet);
+prefs.clearAll();
+```
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
