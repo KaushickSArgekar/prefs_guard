@@ -1,14 +1,61 @@
-# prefsguard
+# Prefs Guard
 
-A Data encryption for shared pref
+Prefs Guard is a data protection wrapper for local storage (Shared Prefs). supporting both IOS & Android.
 
-## Getting Started
+## Installation
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+```bash
+dependencies:
+  prefs_guard: ^0.0.1
+```
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+## Prefs guard supports three types of encryption formats
+
+### GuardType.AES
+```dart
+import 'package:prefs_guard/prefsguard.dart';
+
+final prefs = PrefsGuard(GuardType.AES);
+
+//Storing a value in local storage 
+pres.write(key: 'hello', value: 'flutter'); //encrypts using AES encryption.
+
+//reading a value from local storage
+final data= await pres.read(key: 'hello');//decrypt using AES 
+```
+
+### GuardType.Salsa20
+```dart
+import 'package:prefs_guard/prefsguard.dart';
+
+final prefs = PrefsGuard(GuardType.Salsa20);
+
+//Storing a value in local storage 
+pres.write(key: 'hello', value: 'flutter'); //encrypts using Salsa20 encryption.
+
+//reading a value from local storage
+final data= await pres.read(key: 'hello');//decrypt using Salsa20 
+```
+
+
+### GuardType.FerNet
+```dart
+import 'package:prefs_guard/prefsguard.dart';
+
+final prefs = PrefsGuard(GuardType.FerNet);
+
+//Storing a value in local storage 
+pres.write(key: 'hello', value: 'flutter'); //encrypts using FerNet encryption.
+
+//reading a value from local storage
+final data= await pres.read(key: 'hello');//decrypt using FerNet 
+```
+
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update the tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
