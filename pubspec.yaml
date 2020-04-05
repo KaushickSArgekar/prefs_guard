@@ -2,7 +2,7 @@ name: prefs_guard
 description: A data encyption package for Shared Prefrences
 version: 0.0.1
 author: Kaushick S Argekar
-homepage:
+homepage: https://github.com/KaushickSArgekar/prefs_guard
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

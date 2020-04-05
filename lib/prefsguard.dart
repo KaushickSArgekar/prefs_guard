@@ -40,9 +40,8 @@ class PrefsGuard {
     }
   }
 
-  void clearPres() async{
-    final prefs=await SharedPreferences.getInstance();
+  void clearPres() async {
+    final prefs = await SharedPreferences.getInstance();
     prefs.clear();
-
   }
 }
