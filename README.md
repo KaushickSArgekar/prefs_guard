@@ -2,11 +2,8 @@
 
 Prefs Guard is a data protection wrapper for local storage (Shared Prefs). supporting both IOS & Android.
 
-## Installation
-
-```bash
-dependencies:
-  prefs_guard: ^0.0.1
+```diff
+- Notice :- Use Same GuardType through out the app to get the proper result.
 ```
 
 ## Prefs guard supports three types of encryption formats
