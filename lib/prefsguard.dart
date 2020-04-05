@@ -3,6 +3,7 @@ library prefs_guard;
 import 'package:flutter/material.dart';
 import 'package:prefs_guard/read.dart';
 import 'package:prefs_guard/write.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 enum GuardType { AES, Salsa20, FerNet }
 
@@ -37,5 +38,11 @@ class PrefsGuard {
         return Read.ferNetRead(key);
         break;
     }
+  }
+
+  void clearPres() async{
+    final prefs=await SharedPreferences.getInstance();
+    prefs.clear();
+
   }
 }

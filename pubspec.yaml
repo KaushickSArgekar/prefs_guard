@@ -1,7 +1,7 @@
 name: prefs_guard
-description: A Data encryption for shared pref
+description: A data encyption package for Shared Prefrences
 version: 0.0.1
-author:
+author: Kaushick S Argekar
 homepage:
 
 environment:
