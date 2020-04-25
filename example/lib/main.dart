@@ -67,27 +67,26 @@ class _PrefsGuardExampleState extends State<PrefsGuardExample> {
     }
   }
 
-  _readFromPrefs(GuardType type) async{
-    switch(type){
-
+  _readFromPrefs(GuardType type) async {
+    switch (type) {
       case GuardType.AES:
         {
           final prefs = PrefsGuard(GuardType.AES);
-          String value=await prefs.read(key: 'hello');
+          String value = await prefs.read(key: 'hello');
           print(value);
         }
         break;
       case GuardType.Salsa20:
         {
           final prefs = PrefsGuard(GuardType.Salsa20);
-          String value=await prefs.read(key: 'hello');
+          String value = await prefs.read(key: 'hello');
           print(value);
         }
         break;
       case GuardType.FerNet:
         {
           final prefs = PrefsGuard(GuardType.FerNet);
-          String value=await prefs.read(key: 'hello');
+          String value = await prefs.read(key: 'hello');
           print(value);
         }
         break;

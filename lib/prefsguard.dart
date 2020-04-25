@@ -37,6 +37,8 @@ class PrefsGuard {
       case GuardType.FerNet:
         return Read.ferNetRead(key);
         break;
+      default:
+        return null;
     }
   }
 
