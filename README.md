@@ -15,10 +15,10 @@ import 'package:prefs_guard/prefsguard.dart';
 final prefs = PrefsGuard(GuardType.AES);
 
 //Storing a value in local storage 
-pres.write(key: 'hello', value: 'flutter'); //encrypts using AES encryption.
+prefs.write(key: 'hello', value: 'flutter'); //encrypts using AES encryption.
 
 //reading a value from local storage
-final data= await pres.read(key: 'hello');//decrypt using AES 
+final data= await prefs.read(key: 'hello');//decrypt using AES 
 ```
 
 ### GuardType.Salsa20
@@ -28,10 +28,10 @@ import 'package:prefs_guard/prefsguard.dart';
 final prefs = PrefsGuard(GuardType.Salsa20);
 
 //Storing a value in local storage 
-pres.write(key: 'hello', value: 'flutter'); //encrypts using Salsa20 encryption.
+prefs.write(key: 'hello', value: 'flutter'); //encrypts using Salsa20 encryption.
 
 //reading a value from local storage
-final data= await pres.read(key: 'hello');//decrypt using Salsa20 
+final data= await prefs.read(key: 'hello');//decrypt using Salsa20 
 ```
 
 
@@ -42,10 +42,10 @@ import 'package:prefs_guard/prefsguard.dart';
 final prefs = PrefsGuard(GuardType.FerNet);
 
 //Storing a value in local storage 
-pres.write(key: 'hello', value: 'flutter'); //encrypts using FerNet encryption.
+prefs.write(key: 'hello', value: 'flutter'); //encrypts using FerNet encryption.
 
 //reading a value from local storage
-final data= await pres.read(key: 'hello');//decrypt using FerNet 
+final data= await prefs.read(key: 'hello');//decrypt using FerNet 
 ```
 
 ### Clearing Prefs
