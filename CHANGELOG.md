@@ -1,4 +1,6 @@
-##[0.0.5] - Typo update.
+## [0.0.6] - Packages Updated
+
+## [0.0.5] - Typo update.
 
 ## [0.0.4] - Null value bug fixed.
 
